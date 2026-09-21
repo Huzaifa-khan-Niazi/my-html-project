@@ -1,0 +1,496 @@
+/* =========================
+   GENERAL STYLING
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f7fb;
+    color: #222;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+header {
+    background-color: #111827;
+    padding: 18px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: white;
+    font-size: 28px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #38bdf8;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+#home {
+    min-height: 550px;
+    padding: 80px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+    
+}
+
+#home > div {
+    width: 50%;
+}
+
+#home h1 {
+    font-size: 52px;
+    color: #111827;
+    margin-bottom: 15px;
+}
+
+#home h2 {
+    font-size: 28px;
+    color: #0284c7;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 17px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+#home a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 13px 25px;
+    background-color: #0284c7;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+#home a:hover {
+    background-color: #0369a1;
+}
+
+
+/* HERO IMAGE */
+
+#home img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   COMMON SECTION STYLING
+========================= */
+
+section:not(#home) {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+section:not(#home) > h2 {
+    font-size: 36px;
+    color: #111827;
+    margin-bottom: 10px;
+}
+
+section:not(#home) > p {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: #666;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+#services {
+    background-color: white;
+}
+
+#services article {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    min-height: 240px;
+    margin: 1%;
+    padding: 30px 20px;
+    background-color: #f8fafc;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+}
+
+#services article:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+#services h3 {
+    font-size: 22px;
+    color: #0284c7;
+    margin-bottom: 15px;
+}
+
+#services article p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+#services article a,
+#products article a,
+#blogs article a {
+    display: inline-block;
+    padding: 9px 18px;
+    background-color: #0284c7;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    
+}
+
+#services article a:hover,
+#products article a:hover,
+#blogs article a:hover {
+    background-color: #0369a1;
+}
+
+
+/* =========================
+   PRODUCTS
+========================= */
+
+#products {
+    background-color: #f1f5f9;
+}
+
+#products article {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    min-height: 280px;
+    margin: 1%;
+    padding: 30px 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+#products article:hover {
+    transform: translateY(-8px);
+}
+
+#products h3 {
+    font-size: 22px;
+    color: #111827;
+    margin-bottom: 15px;
+}
+
+#products article p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+#products strong {
+    color: #0284c7;
+}
+
+
+/* =========================
+   BLOGS
+========================= */
+
+#blogs {
+    background-color: white;
+}
+
+#blogs article {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    min-height: 280px;
+    margin: 1%;
+    padding: 30px 20px;
+    background-color: #f8fafc;
+    border-radius: 12px;
+    border-left: 5px solid #0284c7;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+}
+
+#blogs article:hover {
+    transform: translateY(-8px);
+}
+
+#blogs h3 {
+    font-size: 21px;
+    color: #111827;
+    margin-bottom: 15px;
+}
+
+#blogs article p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+#contact {
+    background-color: #e0f2fe;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #111827;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: none;
+    border-color: #0284c7;
+    box-shadow: 0 0 5px rgba(2, 132, 199, 0.3);
+}
+
+#contact button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    background-color: #0284c7;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #0369a1;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+/* Ultra-Slim Modern Footer */
+footer {
+  background: #0b1329;
+  color: #94a3b8;
+  padding: 20px 5%; /* Low vertical padding for small height */
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Vertical centering */
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Brand Section */
+.brand-col h2 {
+  color: #38bdf8;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.brand-col p {
+  font-size: 11px;
+  color: #64748b;
+  max-width: 260px;
+}
+
+/* Headings */
+.footer-col h3 {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+/* Horizontal Quick Links */
+.links-col ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 12px;
+}
+
+.links-col ul li a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 12px;
+  transition: color 0.2s ease;
+}
+
+.links-col ul li a:hover {
+  color: #38bdf8;
+}
+
+/* Social Buttons (Forced Single Row) */
+.social-links {
+  display: flex;
+  flex-direction: row; /* Horizontal alignment */
+  flex-wrap: nowrap;   /* Line breakdown prevent karega */
+  gap: 6px;
+  align-items: center;
+}
+
+.social-links a {
+  color: #cbd5e1;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 11px;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.social-links a:hover {
+  background: #38bdf8;
+  color: #0f172a;
+  border-color: #38bdf8;
+}
+
+/* Bottom Copyright Bar */
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 11px;
+  color: #475569;
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #home {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 5%;
+    }
+
+    #home > div {
+        width: 100%;
+    }
+
+    #home h1 {
+        font-size: 38px;
+    }
+
+    #services article,
+    #products article,
+    #blogs article {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    section:not(#home) {
+        padding: 50px 5%;
+    }
+
+} #photo1 {
+      border-radius: 9px;
+      
+}  #photo2 {
+    border-radius: 9px;
+
+}   #photo3 {
+    border-radius: 9px;
+
+}   #headerpic {
+ 
+    width:200%;
+    height: 150%;
+}
